@@ -1,0 +1,39 @@
+//question 1
+const MyObject={Name:'Dima',Age:34,Hair:'Brown'};
+console.log(MyObject);
+
+//question 2
+function getObject(object){
+  return object.Name; 
+}
+// question 3
+ const MyArray=[1,2,3,4,5];
+   //Anather way for declaring Array
+ const MyArray2=new Array(1,2,3,4,5);
+//question 4
+function printMyArray(array){
+  for (var i = array.length - 1; i >= 0; i--) {
+   console.log(array[i]);
+  } 
+}
+// question 5
+function printNumber(){
+  for (var i = 1; i <=100; i++) {
+      if(i%3==0 && i%5!=0){
+        console.log("Fizz");
+      }
+      else if(i%3!=0 && i%5==0){
+         console.log("Buzz");
+      }
+      else if(i%3==0 && i%5==0){
+       console.log("FizzBuzz");
+      }else{
+      console.log(i);
+      }
+   }
+}
+// to call printNumber function
+printNumber();
+// call printArray function
+printMyArray(MyArray);
+console.log(getObject(MyObject));
